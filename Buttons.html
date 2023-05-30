@@ -5,16 +5,46 @@
     
     <style>
 
-      .
+      .back{
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: auto;
+      }
 
+      .Tweet{
+        background-color: rgb(27, 130, 199);
+        color: white;
+        border: none;
+        border-radius: 16px;
+        height: 34px;
+        width: 70px;
+        font-weight: bold;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      
       .sub{
-            background-color: red;
+            background-color: rgb(216, 37, 5);
             color: white;
             border: none;
-            height: 40px;
-            width: 80px;
-            border-radius: 2px;
+            height: 35px;
+            width: 85px;
+            border-radius: 4px;
             margin-right: 20px;
+            cursor: pointer;
+        }
+        
+        .join{
+          background-color: white;
+          color: rgb(26, 102, 189);
+          border-radius: 3;
+          border-style: solid;
+          border-width: 2px;
+          border-color: rgb(26, 102, 189);
+          font-weight: bold;
+          height: 36px;
+          width: 60px;
+          cursor: pointer;
         }
 
     </style>
@@ -22,21 +52,29 @@
   </head>
   <body>
 
-    <a href="index.html">  
-      <button >Back</button>  
-  </a>
-
-    <button class="sub">
-      Subscribe
-    </button>
-
-    <button>
-      Tweet
-    </button>
-
-    <button>
-
-    </button>
-
+    <div class="container external internal" id="content">
+      <div class="row">
+        
+      <div class="row">
+        <a href="index.html">  
+          <button class="back">Back</button>  
+      </a>
+        <div class="col">
+          <button class="sub">
+            Subscribe
+          </button>
+          <button class="Tweet" title="Elon Musk ist ein Hurensohn">
+            Tweet
+          </button>
+          <button class="join">
+            JOIN
+          </button>
+        </div>
+        <div class="col">
+          
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
