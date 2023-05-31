@@ -21,6 +21,11 @@
         font-weight: bold;
         margin-right: 20px;
         cursor: pointer;
+        transition: box-shadow 0.2s;
+      }
+
+      .Tweet:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0, 0.17);
       }
       
       .sub{
@@ -32,7 +37,16 @@
             border-radius: 4px;
             margin-right: 20px;
             cursor: pointer;
+            transition: opacity 0.2s;
         }
+
+      .sub:hover{
+        opacity: 0.77;        
+      }
+
+      .sub:active{
+        opacity: 0.5;
+      }
         
         .join{
           background-color: white;
@@ -44,7 +58,16 @@
           font-weight: bold;
           height: 36px;
           width: 60px;
+          margin-right: 20px;
+          transition: background-color 0.2s, color 0.2s;
           cursor: pointer;
+        }
+        .join:hover{
+          color: white;
+          background-color: rgb(26, 102, 189);
+        }
+        .join:active{
+          opacity: 0.7;
         }
 
     </style>
