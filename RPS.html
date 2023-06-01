@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+</head>
+<body>
+
+    <script>
+        let bla;
+        function comAnswer(){
+        bla = Math.random();
+        if (bla < 1/3){
+            bla = 1;
+            console.log(1);
+        }else if(2/3 <= bla){
+            bla = 3;
+            console.log(3);
+        }else {bla = 2;
+            console.log(2);
+        }
+    }
+        function whoWins(pick){
+            comAnswer();
+            if(pick === bla){
+            alert("Draw");
+            }else {
+                pick--;
+                if(pick == 0){ pick = 3;}
+                if(pick== bla){alert("You Win")}else {alert("You Loose")}
+            } 
+        }
+    </script>
+
+    <a href="index.html">  
+        <button class="back">Vars</button>  
+    </a>
+    <h1>Roch Paper Scissors</h1>
+    
+    <button onclick="whoWins(1)">Rock</button>
+    <button onclick="whoWins(2)">Paper</button>
+    <button onclick="whoWins(3)">Scissors</button>
+</body>
+</html>
