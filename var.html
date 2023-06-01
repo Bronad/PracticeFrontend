@@ -19,6 +19,7 @@
         #content {
             display: block;
         }
+
         .back{
         margin-right: 20px;
         margin-bottom: 20px;
@@ -29,9 +30,8 @@
             display: block;
         }
         button{
-            background-color: blue;
-            color: white;
-            border: none;
+           
+            margin-right: 10px;
         }
         .red-button{
             background-color: red;
@@ -43,19 +43,43 @@
 </head>
 
 <body>
+    <a href="index.html">  
+        <button class="back">Back</button>  
+    </a>
+    <script>
+        let var1 = 0;
+        function changeitems(Bla){
+                var1 += Bla;
+                document.getElementById("lul").innerHTML = "" + var1;
+            
+        }
+        console.log(var1);
+    </script>
     
     <button title="tooltip" class="red-button" onclick="alert('Good Job!')">Hi</button>
-    <p>Manchmal muss man drücken<button>Hier</button>, oder auch nicht</p>
-        <a href="Buttons.html">  
-        <button>Button Buttons</button>  
-        </a>
-        <a href="var.html">  
-            <button class="back">Vars</button>  
-        </a>
+    <div class="row">
+    <p>
+      ' '' Number of Cart Items: <p id="lul">0</p>
+    </p>
+    </div>
+        
     <div class="container external internal" id="content">
         <div class="row">
-            <div class="col">1 of 2</div>
-            <div class="col">2 of 2</div>
+            <button onclick="alert(var1)">
+                pop it
+            </button>
+            <button onclick="changeitems(1)">
+                Add to Cart
+            </button>
+            <button onclick="changeitems(2)">
+                +2
+            </button>
+            <button onclick="changeitems(3)">
+                +3
+            </button>
+            <button onclick="changeitems(-var1)">
+                reset Cart
+            </button>
         </div>
     </div>
 </body>
