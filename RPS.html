@@ -25,12 +25,18 @@
         function whoWins(pick){
             comAnswer();
             if(pick === bla){
-            alert("Draw");
+            alert("The Computer Picked "+ getcom(bla)+ ". Draw");
             }else {
                 pick--;
                 if(pick == 0){ pick = 3;}
-                if(pick== bla){alert("You Win")}else {alert("You Loose")}
+                if(pick== bla){alert("The Computer Picked "+ getcom(bla)+ ". You Win")}
+                else {alert("The Computer Picked "+ getcom(bla)+ ". You Loose")}
             } 
+        }
+        function getcom(numbb){
+            if(numbb === 3){return 'Scissors';}
+            if(numbb === 2){return'Paper';}
+            else{return 'Rock'}
         }
     </script>
 
