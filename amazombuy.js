@@ -18,4 +18,9 @@ const produkt = {
     },
 }
 
+console.log(JSON.stringify(produkt));
+
+const jsonstring = JSON.stringify(produkt);
+console.log(JSON.parse(jsonstring));
+
 console.log(produkt);
