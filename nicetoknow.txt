@@ -1,3 +1,6 @@
+    CSS & Fonts: 
+        Können über <link rel= "stylesheet" href=Hier der Link> geadded werden
+    
     Objekte: 
       Variablen für Objekte sind wie in C nur Referenzen Auf Spreicher. Deswegen können diese Const sein.
         Dabei Ist bei einer Objekt = Objekt -> Zeigt beides auf den selben Speicher.
