@@ -8,6 +8,13 @@
 
     <script>
 
+        let stats = JSON.parse(localStorage.getItem('stuff')) || {
+            wins: 0,
+            losses: 0,
+            draws: 0
+        }
+
+        /*
         let stats = {
             wins: 0,
             losses: 0,
@@ -19,6 +26,7 @@
         stats = JSON.parse(localStorage.getItem('stuff'));
         }
 
+        */
 
         let bla;
         function comAnswer(){
