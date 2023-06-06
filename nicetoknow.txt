@@ -1,0 +1,17 @@
+    Objekte: 
+      Variablen für Objekte sind wie in C nur Referenzen Auf Spreicher. Deswegen können diese Const sein.
+        Dabei Ist bei einer Objekt = Objekt -> Zeigt beides auf den selben Speicher.
+        You cant compare Objects wiht object === object -> this only compares the Referenzes
+
+        Shortcuts:
+            const message = object.message; ist gleich 
+            const {message} = object;
+            -> kann auch bei mehreren Variablen gemacht werden: 
+            const {message, anderemessage} = object so hätte man message & anderemessage als einzelne Vars
+            -> wenn man den Inhalt einer Var in Objekt haben will: 
+                Object{message}-> erstellt automatisch Var mit namen "message" & den Inhalt den es Referenziert.
+            functions können auch einfach mit Bla(){Algo} im Objekt abgekürzt werden.
+            
+    JSON:
+        Ansammelung an Strings. Kann keine Funktionen tragen. 
+        Kann in Objekte übertragen werden mit JSON.parse(localStorage.getItem("Stuff"))
