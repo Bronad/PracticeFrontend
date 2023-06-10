@@ -18,3 +18,11 @@
     JSON:
         Ansammelung an Strings. Kann keine Funktionen tragen. 
         Kann in Objekte übertragen werden mit JSON.parse(localStorage.getItem("Stuff"))
+
+    To Change a String into a Number use Number(String) -> only wokerd on Storage in a Var.
+    Also works other Way Around with String()
+    Math with Strings is wierd, + Makes String + Number to String and just puts them together, Sub works and makes both Numbers
+        -> dont do Math with Strings
+
+    Window Element is for all-> has console, document, Popups etc. 
+        -> Window is built in, doesnt have to be wirtten out. automatisch geadded through JS

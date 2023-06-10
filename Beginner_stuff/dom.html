@@ -17,7 +17,28 @@
             subButton.innerHTML = 'Subscribe';
         }
     }
+
+    function claculate(){
+
+        let input = Number(document.querySelector('.js-input').value);
+        if(input < 25){
+            input += 5;
+            document.querySelector('.js-outcome').innerHTML = input;
+        }else{
+            document.querySelector('.js-outcome').innerHTML = input;
+        }
+        console.log(input);
+    }
+
+    window.
+
    </script>
+
+   <style>
+        p{
+            margin-top: 10px;
+        }
+   </style>
 
 </head>
 <body>
@@ -30,6 +51,16 @@
     <button class="Js-bla">
         hello2
     </button>
+    <P>Amazon Shipping Calculator</P>
+    <p>Order under 25 € =+ 5 € Shipping</p>
+    <p>Order over 25 € = Free Shipping</p>
+    <input onkeydown="
+        if(event.key === 'Enter'){
+            claculate();
+        }
+    " placeholder="Cost of order" type="text" class="js-input">
+    <button onclick="claculate()">Calculate</button>
+    <p class="js-outcome"> Ergebniss</p>
     </div>
     <script>
        
