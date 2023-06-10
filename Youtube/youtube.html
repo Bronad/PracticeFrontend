@@ -8,12 +8,32 @@
 
         .thumbnail {
             width: 300px;
-            border-radius: 150px;
         }
         .sbar{
             font-size: 20px;
             margin-left: 12px;
             margin-right: 12px;
+            display: block;
+        }
+        p{
+            width: 300px;
+            font-size: 16px;
+        }
+        .video-author, .video-views{
+            font-family: sans-serif;
+        }
+        .video-box{
+            width: 300px;
+            display: inline-block;
+            padding-right: 15px;
+        }
+        .yt-div{
+            width: 100%;
+        max-width: calc(var(--ytd-rich-grid-items-per-row) * (var(--ytd-rich-grid-item-max-width) + var(--ytd-rich-grid-item-margin)));
+        margin: 0 16px;
+        padding-top: 20px;
+        display: flex;
+        vertical-align: top;
         }
 
     </style>
@@ -23,7 +43,37 @@
 
 </head>
 <body>
+
     <input class="sbar" placeholder="Search" type="text">
+
+    <div class="yt-div">
+    <div class="video-box">
     <img class="thumbnail" src="Images\Me.png">
+    
+    <P class="video-title">
+        My VR Expierience
+    </P>
+    <P class="video-author">
+        Lars Franke
+    </P>
+    <p class="video-views">
+        69 views &#8226; 2 years ago
+    </p>
+    </div>
+
+    <div class="video-box">
+        <img class="thumbnail" src="Images/tn2.webp">
+        
+        <P class="video-title">
+            High-school student makes React a million times faster
+        </P>
+        <P class="video-author">
+            Fireship &#10004;
+        </P>
+        <p class="video-views">
+            129.000 views &#8226; 4 Minutes ago
+        </p>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,5 +1,11 @@
+    html
+        there are Block Elements -> Takes entire Line in container
+        inline-Block Elements -> only Takes Space it needs, not the Whole Line
+
+    
     CSS & Fonts: 
         Können über <link rel= "stylesheet" href=Hier der Link> geadded werden
+        div is just a Box -> a container. Div is a Block Element
     
     Objekte: 
       Variablen für Objekte sind wie in C nur Referenzen Auf Spreicher. Deswegen können diese Const sein.
@@ -26,3 +32,5 @@
 
     Window Element is for all-> has console, document, Popups etc. 
         -> Window is built in, doesnt have to be wirtten out. automatisch geadded through JS
+
+    
