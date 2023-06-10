@@ -6,7 +6,18 @@
     <title>Dom</title>
     <link rel="stylesheet" href="buttons.css">
 
-   
+   <script>
+
+    function subs(){
+        
+        const subButton = document.querySelector('.js-sub-button');
+        if(subButton.innerHTML === 'Subscribe'){
+            subButton.innerHTML = 'Subscribed';
+        }else {
+            subButton.innerHTML = 'Subscribe';
+        }
+    }
+   </script>
 
 </head>
 <body>
@@ -14,9 +25,7 @@
         <p>
             Youtube Sub Button
         </p>
-    <button class="sub" onclick="">
-        Subscribe
-    </button>
+    <button onclick="subs();" class="js-sub-button">Subscribe</button>
 
     <button class="Js-bla">
         hello2
