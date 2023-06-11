@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom</title>
-    <link rel="stylesheet" href="buttons.css">
 
-   <script>
-
-    function subs(){
-        
-        const subButton = document.querySelector('.js-sub-button');
-        if(subButton.innerHTML === 'Subscribe'){
-            subButton.innerHTML = 'Subscribed';
-        }else {
-            subButton.innerHTML = 'Subscribe';
-        }
-    }
-
-    function claculate(){
-
-        let input = Number(document.querySelector('.js-input').value);
-        if(input < 25){
-            input += 5;
-            document.querySelector('.js-outcome').innerHTML = input;
-        }else{
-            document.querySelector('.js-outcome').innerHTML = input;
-        }
-        console.log(input);
-    }
-
-    window.
-
-   </script>
+  
 
    <style>
         p{
             margin-top: 10px;
+        }
+        .sub{
+        background-color: rgb(216, 37, 5);
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-right: 20px;
+        border-radius: 4px;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+
+  .sub:hover{
+    opacity: 0.77;        
+  }
+
+  .sub:active{
+    opacity: 0.5;
+  }
+
+        .is-subbed{
+
+            background-color: rgb(202, 202, 202);
+            color: black;
         }
    </style>
 
@@ -46,7 +47,7 @@
         <p>
             Youtube Sub Button
         </p>
-    <button onclick="subs();" class="js-sub-button">Subscribe</button>
+    <button onclick="subs();" class="js-sub-button sub">Subscribe</button>
 
     <button class="Js-bla">
         hello2
@@ -63,21 +64,33 @@
     <p class="js-outcome"> Ergebniss</p>
     </div>
     <script>
-       
-       /*
-        document.title = 'good job';
-        console.log(document.title);
-        console.log(document.body);
 
-        const button1 = document.querySelector('.js-1');
-        const button2 = document.querySelector('.Js-bla');
-        
+        function subs(){
+            
+            const subButton = document.querySelector('.js-sub-button');
+            if(subButton.innerHTML === 'Subscribe'){
+                subButton.innerHTML = 'Subscribed';
+                subButton.classList.add('is-subbed');
+            }else {
+                subButton.innerHTML = 'Subscribe';
+                subButton.classList.remove('is-subbed');
+            }
+        }
+    
+        function claculate(){
+    
+            let input = Number(document.querySelector('.js-input').value);
+            if(input < 25){
+                input += 5;
+                document.querySelector('.js-outcome').innerHTML = input;
+            }else{
+                document.querySelector('.js-outcome').innerHTML = input;
+            }
+            console.log(input);
+        }
+    
+       </script>
 
-        document.querySelector('button').innerHTML = "Bye";
-        document.querySelector('.Js-bla').innerHTML = "Dong";
-        */
-
-    </script>
 
 </body>
 </html>
