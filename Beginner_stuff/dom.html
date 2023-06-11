@@ -8,6 +8,11 @@
   
 
    <style>
+
+        body{
+            font-family: Arial;
+        }
+
         p{
             margin-top: 10px;
         }
@@ -20,6 +25,7 @@
         padding-left: 16px;
         padding-right: 16px;
         margin-right: 20px;
+        margin-bottom: 40px;
         border-radius: 4px;
         margin-right: 20px;
         cursor: pointer;
@@ -39,6 +45,21 @@
             background-color: rgb(202, 202, 202);
             color: black;
         }
+
+        .cost-input{
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .calc-button{
+            background-color: green;
+            font-size: 15px;
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        
    </style>
 
 </head>
@@ -49,9 +70,6 @@
         </p>
     <button onclick="subs();" class="js-sub-button sub">Subscribe</button>
 
-    <button class="Js-bla">
-        hello2
-    </button>
     <P>Amazon Shipping Calculator</P>
     <p>Order under 25 € =+ 5 € Shipping</p>
     <p>Order over 25 € = Free Shipping</p>
@@ -59,8 +77,8 @@
         if(event.key === 'Enter'){
             claculate();
         }
-    " placeholder="Cost of order" type="text" class="js-input">
-    <button onclick="claculate()">Calculate</button>
+    " placeholder="Cost of order" type="text" class="js-input cost-input">
+    <button onclick="claculate()" class="calc-button">Calculate</button>
     <p class="js-outcome"> Ergebniss</p>
     </div>
     <script>
