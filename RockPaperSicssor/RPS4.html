@@ -87,6 +87,7 @@
             } 
             updateScore();
             document.querySelector('.js-picks').innerHTML = pickedStuff();
+            localStorage.setItem('stuff', JSON.stringify(stats));
         }
 
         function getpick(numbb){
