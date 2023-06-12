@@ -14,12 +14,36 @@
         }
 
         .bild-button{
-            width: 50px;
+            background-color: transparent;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            border-width: 4px;
+            border-color: white;
+            border-style: solid;
+            margin-left: 10px;
+            cursor: pointer;
         }
 
         .button-img{
-            width: 50px;
+            height: 50px;
+            background-color: rgb(25,25,25);
         }
+
+        .result{
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .resetbutton{
+            background-color: white;
+            border: none;
+            font-size: 15px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
     </style>
 
     <script>
@@ -64,10 +88,11 @@
             updateScore();
             document.querySelector('.js-picks').innerHTML = pickedStuff();
         }
+
         function getpick(numbb){
-            if(numbb === 3){return 'Scissors';}
-            if(numbb === 2){return'Paper';}
-            else{return 'Rock'}     
+            if(numbb === 3){return 'scissors';}
+            if(numbb === 2){return'paper';}
+            else{return 'rock'}     
         }
 
         function updateScore(){
@@ -75,7 +100,8 @@
         }
 
         function pickedStuff(){
-            return "The Computer picked: " + blaString + ", You Picked: " + pickk + ".";
+            return `You <img src="images/${pickk}-emoji.png" class="button-img">
+                <img src="images/${blaString}-emoji.png" class="button-img"> Computer`;
         }
 
         function resetbutton(){
@@ -99,15 +125,17 @@
     <h1>Roch Paper Scissors</h1>
     
     <button onclick="whoWins(1)" class="bild-button"><img src="images\rock-emoji.png" alt="Rock" class="button-img"></button>
-    <button onclick="whoWins(2)">Paper</button>
-    <button onclick="whoWins(3)">Scissors</button>
-    <button onclick="resetbutton()">Reset Score</button>
-    <p class="js-result"></p>
+    <button onclick="whoWins(2)" class="bild-button"><img src="images\paper-emoji.png" alt="Paper" class="button-img"></button>
+    <button onclick="whoWins(3)" class="bild-button"><img src="images\scissors-emoji.png" alt="Scissors" class="button-img"></button>
+
+    <p class="js-result result"></p>
     <p class="js-picks"></p>
     <p class="js-score"></p>
+    <button onclick="resetbutton()" class="resetbutton">Reset Score</button>
     <script>
         
         updateScore();
+        
     </script>
 </body>
 </html>
