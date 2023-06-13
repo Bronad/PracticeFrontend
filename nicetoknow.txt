@@ -20,6 +20,8 @@
             -> wenn man den Inhalt einer Var in Objekt haben will: 
                 Object{message}-> erstellt automatisch Var mit namen "message" & den Inhalt den es Referenziert.
             functions können auch einfach mit Bla(){Algo} im Objekt abgekürzt werden.
+        Arrays are Objects -> new for me: dasArray.push(stuff) -> puts stuff on the End of the List
+                    .splice(start of removel, how many to remove from there)
             
     JSON:
         Ansammelung an Strings. Kann keine Funktionen tragen. 
