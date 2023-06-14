@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
     <title>Todo List</title>
 
 </head>
@@ -17,6 +18,21 @@
     <input placeholder="todo Element" class="js-todoinput2">
     <button onclick="addItem2()">add</button>
 
-    <div class="js-todooutput"></div>
+    <div class="js-todooutput2"></div>
+
+    <h3>Todo List 3</h3>
+    <div class="todo-input-grid">
+    <input placeholder="todo Element" class="js-todoinput3 name-input">
+    <input type="date" class="js-todoinputdate3 date-input">
+    <button onclick="addItem3()" class="addButton">Add</button>
+    </div>
+    <div class="js-todooutput3 todo-grid">
+        
+    </div>
+
+    <script>
+        renderTodoList();
+    </script>
+
 </body>
 </html>
