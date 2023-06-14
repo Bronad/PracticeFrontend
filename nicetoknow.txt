@@ -22,6 +22,10 @@
             functions können auch einfach mit Bla(){Algo} im Objekt abgekürzt werden.
         Arrays are Objects -> new for me: dasArray.push(stuff) -> puts stuff on the End of the List
                     .splice(start of removel, how many to remove from there)
+                    .slice(); -> Creats a New Array with Same Values;
+            There is a Shortcut to Referenz & assgin Values of a Array to Vars
+                -> const [firstValue, secondValue, thirdValue] = [23, 366, 69];
+            Arrays are only a Referenz to Memory, like in C++.
             
     JSON:
         Ansammelung an Strings. Kann keine Funktionen tragen. 
@@ -35,4 +39,6 @@
     Window Element is for all-> has console, document, Popups etc. 
         -> Window is built in, doesnt have to be wirtten out. automatisch geadded through JS
 
-    
+    Loops:
+        break -> breaks out of the loop early
+        continue; -> will skip to the next Iteration
