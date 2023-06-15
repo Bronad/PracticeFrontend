@@ -42,3 +42,18 @@
     Loops:
         break -> breaks out of the loop early
         continue; -> will skip to the next Iteration
+
+    Advanced Functions:
+        Is also just a type can be assgined Var -> can be Run with Var name and Brackets.
+        function saved inside an Object is Called Method. -> fun: function(){code};
+        function can be passed as a Param in a function.
+        anonymus functions can be declared without names. -> once use or set to Var for Example.
+
+        setTimeout(function, Delay in MS);
+            -> first Value is a function, second is a Timeout in MS. 
+            Async
+        SetInterval() -> gleich wie Timeout nur wiederholt sich das nach jedem Run der Zeit.
+            can for Example be used to write an Autoplay Mode
+
+Sync Code will Wait, async will go on without waiting. 
+
