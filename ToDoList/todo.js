@@ -53,7 +53,7 @@ function addItem3(){
 function renderTodoList(){
 
     let todoListHTML = '';
-
+/*
     for (let i = 0; i < todos3.length; i++) {
         const todoObject = todos3[i];
         const {name, dueDate} = todoObject;
@@ -68,6 +68,20 @@ function renderTodoList(){
       `;
       todoListHTML += html;
     }
+*/
+    todos3.forEach(function(value,index){
+      const {name, dueDate} = value;
+        
+        const html = `
+        <div>${name}</div>
+        <div>${dueDate}</div>
+        <button onclick="
+          todos3.splice(${index}, 1);
+          renderTodoList();
+        " class="deletebutton">Delete</button>
+      `;
+      todoListHTML += html;
+    })
   
     document.querySelector('.js-todooutput3').innerHTML = todoListHTML;
 }

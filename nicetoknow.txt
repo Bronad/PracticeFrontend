@@ -42,8 +42,11 @@
     Loops:
         break -> breaks out of the loop early
         continue; -> will skip to the next Iteration
+        Can be combined with the forEach(function(Value, index){}) function. Will loop Through every Elemtent, with the Value Stored in value. 
+            -> cant really use Break to get out of that Loop Early
 
     Advanced Functions:
+        making a param optional can be done with ? after the Var. 
         Is also just a type can be assgined Var -> can be Run with Var name and Brackets.
         function saved inside an Object is Called Method. -> fun: function(){code};
         function can be passed as a Param in a function.
