@@ -26,7 +26,11 @@
             There is a Shortcut to Referenz & assgin Values of a Array to Vars
                 -> const [firstValue, secondValue, thirdValue] = [23, 366, 69];
             Arrays are only a Referenz to Memory, like in C++.
-            
+            .filter((value, index) => {//code}) function works like for Each
+                -> returns a new Array when the Code returns true. 
+            .map((value, index) = > {//Code returns Value})
+                Creates a new array, where the Operation returns the new Value of the index
+
     JSON:
         Ansammelung an Strings. Kann keine Funktionen tragen. 
         Kann in Objekte übertragen werden mit JSON.parse(localStorage.getItem("Stuff"))
@@ -57,6 +61,15 @@
             Async
         SetInterval() -> gleich wie Timeout nur wiederholt sich das nach jedem Run der Zeit.
             can for Example be used to write an Autoplay Mode
-
+        Arrowfunctions -> kann einer Var zugefügt werden. Wird so verwendet 
+            wird vorallem verwendet um Funktionen in anderen Funktionen zu passen
+            const varname = (param1, param2...)  => { //Code }
+                kann dann mit varname(); ausgeführt werden
+                Kann auch werte returnen
+            const oneParam = param => {code}
+                Hier brauch es keine Klammerung, wenn es sich nur um einem Param handelt.
+            const OneLine = () => 4+5; 
+                funktioniert, da die auszuführende Funktion nich über eine Line hinausgeht.
+        
 Sync Code will Wait, async will go on without waiting. 
 

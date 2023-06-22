@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+
+    <button class="js-event">
+        Mach was
+    </button>
+
+    <script>
+        const button1 = document.querySelector('.js-event');
+        button1.addEventListener('click', () => {console.log('click');});
+        // can Add Multiple Event Listener to one Event. 
+        // Event Listeners can be Removed in Code Via -> .removeEventListener('Event', the function Saved in the Listener(pref Saved in a Var))
+        //const fun1 = () => {console.log('click2'); button1.removeEventListener('click', fun1());};
+        const eventlistener = () => {console.log('click2'); button1.removeEventListener('click', eventlistener)};
+        button1.addEventListener('click', eventlistener);
+        
+
+    </script>
+    
+</body>
+</html>
