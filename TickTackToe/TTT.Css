@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+
+.Box{
+    background-color: lightsteelblue;
+    
+}
+
+.field button{
+    width: 200px;
+    height: 200px;
+    border-color: white;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
