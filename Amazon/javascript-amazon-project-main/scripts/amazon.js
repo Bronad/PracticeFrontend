@@ -3,7 +3,7 @@
 //     name: '', 
 // }
 
-class product {
+/* class product {
     constructor(image, name, stars, count, price ) {
         this.image = image;
         this.name = name;
@@ -34,8 +34,23 @@ const products = [new product(
                 4.5,
                 56,
                 799
+            ),
+            new product(
+                'images/products/black-2-slot-toaster.jpg',
+                '2 Slot Toaster - Black',
+                5,
+                2197,
+                1899
+            ),
+            new product(
+                'images/products/6-piece-white-dinner-plate-set.jpg',
+                '6 Piece White Dinner Plate Set',
+                4,
+                37,
+                2067
             )
         ];
+ */
 
         let htmlProducts = ``;
 
@@ -53,14 +68,14 @@ products.forEach((product) => {
 
         <div class="product-rating-container">
             <img class="product-rating-stars"
-            src="images/ratings/rating-${product.stars * 10}.png">
+            src="images/ratings/rating-${product.rating.stars * 10}.png">
             <div class="product-rating-count link-primary">
-            ${product.count}
+            ${product.rating.count}
             </div>
         </div>
 
         <div class="product-price">
-            $${(product.price / 100).toFixed(2)}
+            $${(product.priceCents / 100).toFixed(2)}
         </div>
 
         <div class="product-quantity-container">
