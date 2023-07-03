@@ -100,16 +100,23 @@ products.forEach((product) => {
             Added
         </div>
 
-        <button class="add-to-cart-button button-primary">
+        <button class="add-to-cart-button button-primary jsAddToCart data-product = ${product}">
             Add to Cart
         </button>
         </div>`;
 })
 
-function ItemCreater() {}
-
-console.log('hello');
-console.log(products);
-console.log(htmlProducts);
-
 document.querySelector('.js-product-grid').innerHTML = htmlProducts;
+
+
+// Add to Cart Logic
+
+const cart = [];
+
+document.querySelectorAll('.jsAddToCart').forEach((button) => {
+    button.addEventListener('click', () => {
+        cart.push(data-product);
+        console.log(cart);
+    });
+
+});
