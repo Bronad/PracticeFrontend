@@ -132,8 +132,15 @@ document.querySelectorAll('.jsAddToCart').forEach((button) => {
             productId : productId,
             quantity: 1
         });
-        console.log(cart);
         };
-    })
+
+        let cartItems = 0;
+
+        cart.forEach((item) => {
+            cartItems += item.quantity;
+        });
+
+        document.querySelector('.js-cart-quantity').innerHTML = cartItems;
+    });
 
 });
