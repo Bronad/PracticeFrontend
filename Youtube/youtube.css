@@ -13,7 +13,13 @@ p{
 }
 .video-author, .video-views{
     font-family: sans-serif;
+    display: inline-block;
 }
+
+.video-author{
+    display: inline;
+}
+
 .video-box{
     width: 300px;
     display: inline-block;
@@ -26,4 +32,15 @@ margin: 0 16px;
 padding-top: 20px;
 display: flex;
 vertical-align: top;
+}
+
+.channel-Image{
+    width: 40px;
+}
+
+.Channel-Box{
+    align-items: flex-start;
+    display: inline-block;
+    align-items: flex-end;
+
 }
